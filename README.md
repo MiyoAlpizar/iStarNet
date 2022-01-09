@@ -9,6 +9,7 @@
 Proyecto desarrollado usando VIPER como patrón de arquitectura de software ya que esté patrón permite una mayor escalabilidad en proyectos grandes, usando también como base los principios de SOLID e injección de dependencias.
 
 Ejemplo de la app funcionando
+https://youtu.be/NKLsjajY8Og
 
 
 ## Ciclo de vida de UIView Controller en orden:
