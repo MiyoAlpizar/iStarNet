@@ -37,7 +37,7 @@ protocol SignUpPresenterProtocol: AnyObject {
     
     func openImagePicker(type: UIImagePickerController.SourceType)
     
-    func registerUser(email: String, pwd: String, imageProfile: UIImage)
+    func registerUser(email: String, name: String, pwd: String, imageProfile: UIImage)
     
 }
 
@@ -53,7 +53,7 @@ protocol SignUpInteractorInputProtocol: AnyObject {
     var localDatamanager: SignUpLocalDataManagerInputProtocol? { get set }
     var remoteDatamanager: SignUpRemoteDataManagerInputProtocol? { get set }
     
-    func registerUser(email: String, pwd: String, image: UIImage)
+    func registerUser(email: String, name: String, pwd: String, image: UIImage)
 }
 
 protocol SignUpDataManagerInputProtocol: AnyObject {
@@ -67,7 +67,7 @@ protocol SignUpRemoteDataManagerInputProtocol: AnyObject {
     var storageService: StorageServiceProtocol? { get set }
     var firestoreService: FirestoreService? { get set }
     
-    func registerUser(email: String, pwd: String, image: UIImage)
+    func registerUser(email: String,name: String, pwd: String, image: UIImage)
     
 }
 

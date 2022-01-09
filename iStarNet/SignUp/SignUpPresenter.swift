@@ -21,9 +21,9 @@ class SignUpPresenter  {
 }
 
 extension SignUpPresenter: SignUpPresenterProtocol {
-    func registerUser(email: String, pwd: String, imageProfile: UIImage) {
+    func registerUser(email: String, name: String, pwd: String, imageProfile: UIImage) {
         view?.isLoading(loading: true)
-        interactor?.registerUser(email: email, pwd: pwd, image: imageProfile)
+        interactor?.registerUser(email: email,name: name, pwd: pwd, image: imageProfile)
     }
     
     // TODO: implement presenter methods

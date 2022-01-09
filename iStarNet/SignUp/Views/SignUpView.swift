@@ -15,6 +15,7 @@ class SignUpView: UIViewController {
     
     @IBOutlet weak var imgProfile: UIImageView!
     @IBOutlet weak var txtEmail: UITextField!
+    @IBOutlet weak var txtName: UITextField!
     @IBOutlet weak var txtPwd: UITextField!
     @IBOutlet weak var txtPwd2: UITextField!
     @IBOutlet weak var btnImageProfile: UIButton!
@@ -80,6 +81,18 @@ class SignUpView: UIViewController {
             return
         }
         
+        guard let name = txtName.text else {
+            self.alert(message: "Debes ingresar tu nombre")
+            txtName.becomeFirstResponder()
+            return
+        }
+        
+        guard name.count > 2 else {
+            self.alert(message: "Debes ingresar tu nombre")
+            txtName.becomeFirstResponder()
+            return
+        }
+        
         guard let pwd = txtPwd.text else {
             self.alert(message: "Debes ingresar una contraseña de más de 6 caracteres")
             txtPwd.becomeFirstResponder()
@@ -105,7 +118,7 @@ class SignUpView: UIViewController {
             return
         }
         view.endEditing(true)
-        presenter?.registerUser(email: email, pwd: pwd, imageProfile: image)
+        presenter?.registerUser(email: email, name: name, pwd: pwd, imageProfile: image)
         
     }
     
@@ -174,6 +187,11 @@ extension SignUpView: UITextFieldDelegate {
             guard txt.isValidEmail() else {
                 return false
             }
+            txtName.becomeFirstResponder()
+        }
+        
+        if textField == txtName {
+            guard txtName.text != nil else { return false }
             txtPwd.becomeFirstResponder()
         }
         

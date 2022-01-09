@@ -15,8 +15,8 @@ class SignUpInteractor: SignUpInteractorInputProtocol {
     var localDatamanager: SignUpLocalDataManagerInputProtocol?
     var remoteDatamanager: SignUpRemoteDataManagerInputProtocol?
     
-    func registerUser(email: String, pwd: String, image: UIImage) {
-        remoteDatamanager?.registerUser(email: email, pwd: pwd, image: image)
+    func registerUser(email: String,name: String, pwd: String, image: UIImage) {
+        remoteDatamanager?.registerUser(email: email, name: name, pwd: pwd, image: image)
     }
 }
 extension SignUpInteractor: SignUpRemoteDataManagerOutputProtocol {

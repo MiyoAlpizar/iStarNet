@@ -15,8 +15,8 @@ class SignUpRemoteDataManager:SignUpRemoteDataManagerInputProtocol {
     var firestoreService: FirestoreService?
     var remoteRequestHandler: SignUpRemoteDataManagerOutputProtocol?
     
-    func registerUser(email: String, pwd: String, image: UIImage) {
-        userService?.resgisterWithEmail(email: email, password: pwd, completion: { result in
+    func registerUser(email: String, name: String, pwd: String, image: UIImage) {
+        userService?.resgisterWithEmail(email: email, name: name, password: pwd, completion: { result in
             
             switch result {
             case .failure(let error):
@@ -27,7 +27,6 @@ class SignUpRemoteDataManager:SignUpRemoteDataManagerInputProtocol {
                 newUser.email = email
                 self.uploadImage(image: image, user: newUser)
             }
-            
         })
     }
     

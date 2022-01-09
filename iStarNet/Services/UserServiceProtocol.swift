@@ -10,7 +10,7 @@ import FirebaseAuth
 ///User sesión protocol functions
 protocol UserServiceProtocol: AnyObject {
     
-    func resgisterWithEmail(email: String, password: String, completion: @escaping(Result<iUser, Error>) -> ())
+    func resgisterWithEmail(email: String, name: String, password: String, completion: @escaping(Result<iUser, Error>) -> ())
     
     func loginWithEmail(email: String, password: String, completion: @escaping(Result<iUser, Error>) -> ())
     

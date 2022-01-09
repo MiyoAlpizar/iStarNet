@@ -17,6 +17,7 @@
                 <outlet property="btnRegister" destination="i53-Il-HPL" id="igU-xK-wXr"/>
                 <outlet property="imgProfile" destination="R0c-j7-dfg" id="hAS-YN-Qhg"/>
                 <outlet property="txtEmail" destination="xiL-BA-fZN" id="RZY-m5-nPu"/>
+                <outlet property="txtName" destination="Zbg-Uq-WAo" id="CTW-jU-pTB"/>
                 <outlet property="txtPwd" destination="SZ2-yA-htt" id="4vT-JV-7Ab"/>
                 <outlet property="txtPwd2" destination="Iwb-ry-iMP" id="fth-Qq-PXd"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
@@ -31,10 +32,10 @@
                     <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                     <subviews>
                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="U2t-GG-06O">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="428"/>
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="488"/>
                             <subviews>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GIQ-zF-FQC">
-                                    <rect key="frame" x="0.0" y="0.0" width="375" height="167"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="169"/>
                                     <subviews>
                                         <imageView clipsSubviews="YES" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="R0c-j7-dfg">
                                             <rect key="frame" x="142.66666666666666" y="40" width="90" height="90"/>
@@ -50,8 +51,8 @@
                                             </userDefinedRuntimeAttributes>
                                         </imageView>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="9Lp-nO-uIE">
-                                            <rect key="frame" x="172.66666666666666" y="129" width="30" height="26"/>
-                                            <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                                            <rect key="frame" x="170.66666666666666" y="129" width="34" height="28"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                                             <state key="normal" title="Selfie"/>
                                             <connections>
@@ -69,10 +70,10 @@
                                     </constraints>
                                 </view>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gGA-9H-uIw">
-                                    <rect key="frame" x="0.0" y="177" width="375" height="251"/>
+                                    <rect key="frame" x="0.0" y="179" width="375" height="309"/>
                                     <subviews>
                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillProportionally" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="aof-Lr-UXd">
-                                            <rect key="frame" x="20" y="0.0" width="335" height="251"/>
+                                            <rect key="frame" x="20" y="0.0" width="335" height="309"/>
                                             <subviews>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Email" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xiL-BA-fZN">
                                                     <rect key="frame" x="0.0" y="0.0" width="335" height="46"/>
@@ -82,8 +83,16 @@
                                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                     <textInputTraits key="textInputTraits" returnKeyType="next" textContentType="email"/>
                                                 </textField>
-                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-yA-htt">
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Nombre" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Zbg-Uq-WAo">
                                                     <rect key="frame" x="0.0" y="58" width="335" height="46"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="height" constant="46" id="8zo-j9-fI2"/>
+                                                    </constraints>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                    <textInputTraits key="textInputTraits"/>
+                                                </textField>
+                                                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="SZ2-yA-htt">
+                                                    <rect key="frame" x="0.0" y="116" width="335" height="46"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="NC7-bt-JZt"/>
                                                     </constraints>
@@ -91,7 +100,7 @@
                                                     <textInputTraits key="textInputTraits" returnKeyType="next" secureTextEntry="YES"/>
                                                 </textField>
                                                 <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Confirma contraseña" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Iwb-ry-iMP">
-                                                    <rect key="frame" x="0.0" y="116" width="335" height="46"/>
+                                                    <rect key="frame" x="0.0" y="174" width="335" height="46"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="46" id="G19-6n-Jav"/>
                                                     </constraints>
@@ -99,14 +108,14 @@
                                                     <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                                 </textField>
                                                 <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="0QU-kS-Qz5">
-                                                    <rect key="frame" x="0.0" y="174" width="335" height="20"/>
+                                                    <rect key="frame" x="0.0" y="232" width="335" height="20"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="20" id="NfL-ZQ-SC6"/>
                                                     </constraints>
                                                     <color key="color" systemColor="secondaryLabelColor"/>
                                                 </activityIndicatorView>
                                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="i53-Il-HPL">
-                                                    <rect key="frame" x="0.0" y="206" width="335" height="45"/>
+                                                    <rect key="frame" x="0.0" y="264" width="335" height="45"/>
                                                     <color key="backgroundColor" name="AccentColor"/>
                                                     <constraints>
                                                         <constraint firstAttribute="height" constant="45" id="iur-Jh-NRA"/>
@@ -156,7 +165,7 @@
     </objects>
     <resources>
         <namedColor name="AccentColor">
-            <color red="0.7803921568627451" green="0.42352941176470588" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.77999997138977051" green="0.42399999499320984" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="opaqueSeparatorColor">
             <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

@@ -11,14 +11,16 @@ import FirebaseAuth
 ///Class that implements UserServiceProtocol with Firebase
 class FirebaseUserService: UserServiceProtocol {
     
-    func resgisterWithEmail(email: String, password: String, completion: @escaping (Result<iUser, Error>) -> ()) {
+    func resgisterWithEmail(email: String, name: String, password: String, completion: @escaping (Result<iUser, Error>) -> ()) {
         Auth.auth().createUser(withEmail: email, password: password) { result, error in
             if let error = error {
                 completion(.failure(error))
                 return
             }
             if let result = result {
-                completion(.success(result.user.toiUser()))
+                var user = result.user.toiUser()
+                user.name = name
+                completion(.success(user))
             }
         }
     }

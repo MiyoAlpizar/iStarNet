@@ -35,7 +35,7 @@ class ProfileView: UITableViewController {
         let user = UserPersistence.shared.getCurrentUser()
         if let user = user {
             header.imgProfile.sd_setImage(with: URL(string: user.imagePath!) , completed: nil)
-            header.lblName.text = user.email ?? "No name"
+            header.lblName.text = user.name
             
         }
         tableView.tableHeaderView = header
