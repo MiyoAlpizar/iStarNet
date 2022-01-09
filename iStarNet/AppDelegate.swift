@@ -23,7 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func customInit() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        window?.rootViewController = UIViewController()
+        window?.rootViewController = StartWireFrame.createStartModule()
     }
 
     // MARK: UISceneSession Lifecycle

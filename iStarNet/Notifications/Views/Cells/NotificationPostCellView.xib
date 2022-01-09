@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="74" id="KGk-i7-Jjw" customClass="NotificationPostCellView" customModule="iSocialNet" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="74"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="lbf-Tk-Ilx">
+                        <rect key="frame" x="16" y="8" width="40" height="40"/>
+                        <color key="backgroundColor" systemColor="opaqueSeparatorColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="Ebi-lK-lZE"/>
+                            <constraint firstAttribute="width" constant="40" id="YRD-r5-fs4"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="20"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Anakin Skaywalker" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oTI-hq-HFy">
+                        <rect key="frame" x="64" y="8" width="118.5" height="16"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="13"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="09:24 pm" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x6Q-iH-5KH">
+                        <rect key="frame" x="257" y="8" width="47" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Comentó recientemente un post" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mGz-vs-T7i">
+                        <rect key="frame" x="64" y="24" width="155" height="12"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="10"/>
+                        <color key="textColor" systemColor="secondaryLabelColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KoC-wk-8Vf">
+                        <rect key="frame" x="64" y="44" width="240" height="17"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="x6Q-iH-5KH" firstAttribute="top" secondItem="oTI-hq-HFy" secondAttribute="top" id="6cD-x8-sgk"/>
+                    <constraint firstItem="lbf-Tk-Ilx" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="8" id="7pS-OH-Xrh"/>
+                    <constraint firstItem="KoC-wk-8Vf" firstAttribute="leading" secondItem="mGz-vs-T7i" secondAttribute="leading" id="8sp-UW-uCm"/>
+                    <constraint firstItem="mGz-vs-T7i" firstAttribute="top" secondItem="oTI-hq-HFy" secondAttribute="bottom" id="Cig-bB-ZAR"/>
+                    <constraint firstItem="lbf-Tk-Ilx" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="Dul-6P-krL"/>
+                    <constraint firstItem="mGz-vs-T7i" firstAttribute="leading" secondItem="oTI-hq-HFy" secondAttribute="leading" id="GAy-n7-EZu"/>
+                    <constraint firstItem="oTI-hq-HFy" firstAttribute="top" secondItem="lbf-Tk-Ilx" secondAttribute="top" id="KqW-32-LH3"/>
+                    <constraint firstAttribute="bottom" secondItem="KoC-wk-8Vf" secondAttribute="bottom" constant="13" id="QBi-Z6-rQH"/>
+                    <constraint firstItem="KoC-wk-8Vf" firstAttribute="trailing" secondItem="x6Q-iH-5KH" secondAttribute="trailing" id="bzn-n0-Tby"/>
+                    <constraint firstAttribute="trailing" secondItem="x6Q-iH-5KH" secondAttribute="trailing" constant="16" id="due-Rd-gUG"/>
+                    <constraint firstItem="KoC-wk-8Vf" firstAttribute="top" secondItem="mGz-vs-T7i" secondAttribute="bottom" constant="8" symbolic="YES" id="eGg-K1-ton"/>
+                    <constraint firstItem="oTI-hq-HFy" firstAttribute="leading" secondItem="lbf-Tk-Ilx" secondAttribute="trailing" constant="8" symbolic="YES" id="yLP-mr-IXS"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgUser" destination="lbf-Tk-Ilx" id="14n-f4-9gG"/>
+                <outlet property="lblComment" destination="KoC-wk-8Vf" id="VJw-L0-7ed"/>
+                <outlet property="lblDetail" destination="mGz-vs-T7i" id="bgn-KR-tiK"/>
+                <outlet property="lblName" destination="oTI-hq-HFy" id="fxI-km-cEF"/>
+                <outlet property="lblTime" destination="x6Q-iH-5KH" id="pIx-NU-5Pn"/>
+            </connections>
+            <point key="canvasLocation" x="131.8840579710145" y="72.991071428571431"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <systemColor name="opaqueSeparatorColor">
+            <color red="0.77647058823529413" green="0.77647058823529413" blue="0.78431372549019607" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
