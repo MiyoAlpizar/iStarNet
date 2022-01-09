@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>CLIENT_ID</key>
+	<string>993283199239-kkv9g4jlm5nuvo413hf511ms1p8f8ell.apps.googleusercontent.com</string>
+	<key>REVERSED_CLIENT_ID</key>
+	<string>com.googleusercontent.apps.993283199239-kkv9g4jlm5nuvo413hf511ms1p8f8ell</string>
+	<key>API_KEY</key>
+	<string>AIzaSyBb19LiIm-qxnndLzyBLE5bUuCrdSbugDQ</string>
+	<key>GCM_SENDER_ID</key>
+	<string>993283199239</string>
+	<key>PLIST_VERSION</key>
+	<string>1</string>
+	<key>BUNDLE_ID</key>
+	<string>todosVuelan.iStarNet</string>
+	<key>PROJECT_ID</key>
+	<string>isocialnet-8f4b0</string>
+	<key>STORAGE_BUCKET</key>
+	<string>isocialnet-8f4b0.appspot.com</string>
+	<key>IS_ADS_ENABLED</key>
+	<false></false>
+	<key>IS_ANALYTICS_ENABLED</key>
+	<false></false>
+	<key>IS_APPINVITE_ENABLED</key>
+	<true></true>
+	<key>IS_GCM_ENABLED</key>
+	<true></true>
+	<key>IS_SIGNIN_ENABLED</key>
+	<true></true>
+	<key>GOOGLE_APP_ID</key>
+	<string>1:993283199239:ios:63f952b4e738498f66f5a2</string>
+</dict>
+</plist>

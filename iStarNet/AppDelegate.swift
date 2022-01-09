@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import Firebase
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -13,6 +14,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var window: UIWindow?
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        FirebaseApp.configure()
         // Override point for customization after application launch.
         customInit()
         return true
@@ -21,11 +23,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func customInit() {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.makeKeyAndVisible()
-        let vc = UIViewController()
-        let nc = UINavigationController(rootViewController: vc)
-        vc.navigationItem.title = "HOLA"
-        nc.title = "MIYO"
-        window?.rootViewController = nc
+        window?.rootViewController = UIViewController()
     }
 
     // MARK: UISceneSession Lifecycle
