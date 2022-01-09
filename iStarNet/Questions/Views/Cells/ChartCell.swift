@@ -42,14 +42,16 @@ class ChartCell: UITableViewCell {
                 label: "\(data.responses[i].data) \(data.responses[i].value)%" ,
                 data: data.responses[i].value)
             entries.append(entry)
-            
             colors.append(data.responses[i].color)
             
         }
         let pieDataSet = PieChartDataSet(entries: entries, label: "")
         pieDataSet.colors = colors
         pieChart.drawEntryLabelsEnabled = false
+        pieChart.legend.textColor = UIColor.init(named: "Label") ?? UIColor.gray
+        
         let pieData = PieChartData(dataSet: pieDataSet)
+       
         pieChart.data = pieData
     }
     

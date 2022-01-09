@@ -51,6 +51,7 @@
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="ZeL-QN-ed8"/>
                                     </constraints>
+                                    <color key="color" systemColor="secondaryLabelColor"/>
                                 </activityIndicatorView>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gnm-nU-jUV">
                                     <rect key="frame" x="0.0" y="148" width="374" height="45"/>
@@ -101,6 +102,9 @@
         <namedColor name="AccentColor">
             <color red="0.7803921568627451" green="0.42352941176470588" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
+        <systemColor name="secondaryLabelColor">
+            <color red="0.23529411764705882" green="0.23529411764705882" blue="0.2627450980392157" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
