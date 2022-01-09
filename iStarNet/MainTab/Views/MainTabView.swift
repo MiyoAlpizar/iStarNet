@@ -21,8 +21,8 @@ class MainTabView: UITabBarController {
     
     func createChildren() {
         let homeVC = UINavigationController(rootViewController: HomeWireFrame.createHomeModule())
-        homeVC.tabBarItem.image = UIImage(named: "house")
-        homeVC.tabBarItem.selectedImage = UIImage(named: "house.fill")
+        homeVC.tabBarItem.image = UIImage(named: "home")
+        homeVC.tabBarItem.selectedImage = UIImage(named: "home.fill")
         homeVC.navigationBar.prefersLargeTitles = true
         
         let messagesList = UINavigationController(rootViewController: MessagesWireFrame.createMessagesModule())
@@ -42,8 +42,8 @@ class MainTabView: UITabBarController {
         notificationsVC.navigationBar.prefersLargeTitles = true
         
         let profileVC = UINavigationController(rootViewController: ProfileWireFrame.createProfileModule())
-        profileVC.tabBarItem.image = UIImage(named: "person")
-        profileVC.tabBarItem.selectedImage = UIImage(named: "person.fill")
+        profileVC.tabBarItem.image = UIImage(named: "user")
+        profileVC.tabBarItem.selectedImage = UIImage(named: "user.fill")
         profileVC.navigationBar.prefersLargeTitles = true
         
         viewControllers = [homeVC, messagesList, addVC, notificationsVC, profileVC]

@@ -27,11 +27,8 @@ class NotificationCellView: UITableViewCell {
     }
     
     private func setData(data: NotificationForCell) {
-        if #available(iOS 13.0, *) {
-            imgIcon.image = UIImage(systemName: data.icon)
-        } else {
-            imgIcon.image = UIImage(named: data.icon)
-        }
+        imgIcon.image = UIImage(named: data.icon)?.withRenderingMode(UIImage.RenderingMode.alwaysTemplate)
+        imgIcon.tintColor = UIColor(named: "AccentColor")
         lblMessage.text = data.message
         lblTime.text = data.time
     }

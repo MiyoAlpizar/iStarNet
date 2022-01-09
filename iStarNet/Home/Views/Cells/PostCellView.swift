@@ -48,9 +48,9 @@ class PostCellView: UITableViewCell {
         }
         
         if data.currentUserLiked {
-            //btnLike.setImage(UIImage(systemName: "heart.fill"), for: UIControl.State.normal)
+            btnLike.setImage(UIImage(named: "heart.fill"), for: UIControl.State.normal)
         }else {
-            //btnLike.setImage(UIImage(systemName: "heart"), for: UIControl.State.normal)
+            btnLike.setImage(UIImage(named: "heart"), for: UIControl.State.normal)
         }
         
     }
