@@ -67,7 +67,7 @@ extension Conversation {
             } else {
                 // Fallback on earlier versions
                 let formatter = DateFormatter()
-                formatter.dateStyle = .short
+                formatter.timeStyle = .short
                 message.timeAgo = formatter.string(from: timeAgo)
             }
             
