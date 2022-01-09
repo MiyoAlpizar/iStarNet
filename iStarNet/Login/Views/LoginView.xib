@@ -10,7 +10,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="iSocialNet" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="LoginView" customModule="iStarNet" customModuleProvider="target">
             <connections>
                 <outlet property="activity" destination="W11-BF-Ovo" id="nvU-oz-9nV"/>
                 <outlet property="btnLogin" destination="gnm-nU-jUV" id="yeT-uG-pvI"/>
@@ -46,7 +46,7 @@
                                     <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                     <textInputTraits key="textInputTraits" returnKeyType="go" secureTextEntry="YES"/>
                                 </textField>
-                                <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="W11-BF-Ovo">
+                                <activityIndicatorView opaque="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" translatesAutoresizingMaskIntoConstraints="NO" id="W11-BF-Ovo">
                                     <rect key="frame" x="0.0" y="116" width="374" height="20"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="20" id="ZeL-QN-ed8"/>
@@ -99,7 +99,7 @@
     </objects>
     <resources>
         <namedColor name="AccentColor">
-            <color red="0.77999997138977051" green="0.42399999499320984" blue="0.53299999237060547" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.7803921568627451" green="0.42352941176470588" blue="0.53333333333333333" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>

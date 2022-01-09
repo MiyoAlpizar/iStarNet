@@ -99,8 +99,8 @@ class SignUpView: UIViewController {
         }
         
         guard let image = imgProfile.image else {
-            self.alert(message: "Debes elegir una foto de perfil") {
-                self.presenter?.openImagePicker(type: UIImagePickerController.SourceType.photoLibrary)
+            self.alert(message: "Debes subir tu selfie") {
+                self.selectPictureProfile()
             }
             return
         }
