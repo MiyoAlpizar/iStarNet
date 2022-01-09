@@ -12,6 +12,6 @@ target 'iStarNet' do
   pod 'Firebase/Storage'
   pod 'SDWebImage'
   pod 'ReachabilitySwift'
-  pod 'Charts'
+  pod 'Charts', '3.3.0'
 
 end
