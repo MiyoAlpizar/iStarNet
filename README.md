@@ -2,6 +2,12 @@
 
 ## _Una app social muy muy lejana_
 
+## Instrucciones
+1.- Clonar repositorio
+2.- Abrir proyecto en terminal y ejecutar pod install
+3.- No actualizar los ajustes del proyecto a las recomendaciones que maraca XCode, 
+porque pondrá todos los pods como mínimo al iOS 12 y el target de este proyecto es iOS 11 
+
 [![N|Solid](https://cldup.com/dTxpPi9lDf.thumb.png)](https://nodesource.com/products/nsolid)
 
 [![Build Status](https://travis-ci.org/joemccann/dillinger.svg?branch=master)](https://travis-ci.org/joemccann/dillinger)
