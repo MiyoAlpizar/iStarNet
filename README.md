@@ -3,8 +3,10 @@
 ## _Una app social muy muy lejana_
 
 ## Instrucciones
-1.- Clonar repositorio
+1.- Clonar repositorio.
+
 2.- Abrir proyecto en terminal y ejecutar pod install
+
 3.- No actualizar los ajustes del proyecto a las recomendaciones que maraca XCode, 
 porque pondrá todos los pods como mínimo al iOS 12 y el target de este proyecto es iOS 11 
 
